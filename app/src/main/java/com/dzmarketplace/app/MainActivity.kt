@@ -56,6 +56,7 @@ class MainActivity : ComponentActivity() {
  }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable fun Main(page: Page, nav: (Page) -> Unit, logout: () -> Unit) {
  Scaffold(
   topBar = { TopAppBar(title = { Text("DZ Marketplace") }) },
