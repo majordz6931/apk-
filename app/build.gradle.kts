@@ -13,6 +13,13 @@ android {
   versionCode = 1
   versionName = "1.0"
  }
+ buildTypes {
+  release {
+   // Sign the release variant with the standard Android debug key so the APK is installable.
+   // For Play Store/production distribution, replace this with a private release keystore.
+   signingConfig = signingConfigs.getByName("debug")
+  }
+ }
 }
 kotlin { jvmToolchain(17) }
 dependencies {
