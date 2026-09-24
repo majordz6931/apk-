@@ -1,1 +1,0 @@
-Trigger cloud Android Release build for DZMarketplace.
